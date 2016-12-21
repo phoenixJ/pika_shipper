@@ -13,7 +13,6 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url(); ?>public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
     <link href="<?php echo base_url(); ?>public/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -30,6 +29,15 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style type="text/css">
+        .navbar-default .navbar-nav .open a:hover, .navbar-default .navbar-nav .open a:focus {
+            color: white ;
+            background-color: #FED136;
+        }
+        .navbar-custom .nav li .dropdown-menu a {
+            color: black;
+        }
+    </style>
 </head>
 
 <body id="page-top" class="index">
