@@ -7,12 +7,17 @@
                     <h3 class="section-subheading text-muted">Share your trip to us and things that you are able to buy :)</h3>
                 </div>
             </div>
+
+            <div class="validation-error">
+				<?php echo validation_errors(); ?>
+			</div>
+
 			<div class="form-style-6">
-				<form>
+				<form action="<?php echo base_url(); ?>buyable/index" method="POST">
 				<fieldset>
 				<legend><span class="number">1</span>Thông tin chuyến đi</legend>
 				<label for="input_10">Đi từ*</label>
-				<select name="input_10" id="input_10" class="medium gfield_select" tabindex="1">
+				<select name="flightFrom" id="input_10" class="medium gfield_select" tabindex="1">
 					<option value="Nhật Bản">Nhật Bản</option>
 					<option value="Hàn Quốc">Hàn Quốc</option>
 					<option value="Pháp">Pháp</option>
@@ -29,21 +34,9 @@
 					<option value="Canada">Canada</option>
 				</select>
 				<label>Đi đến*</label>
-				<input type="text" name="field8" placeholder="Ho Chi Minh, Ha Noi, Lao cai ex..."></textarea>
-				<label>Có thể mua</label>
-				<input type="text" name="field9" placeholder="(tự chọn): 100 BlackBerry Passport, Xiaomi Vacumm* ex...">
-				<fieldset>
-					<legend><span class="number">2</span>Thông tin về bạn</legend>
-					<label>Họ & Tên</label>
-					<input type="text" name="field5" placeholder="...">
-					<label>Email</label>
-					<input type="email" name="field6" placeholder="example@gmail.com*">
-					<label>Số điện thoại</label>
-					<input type="text" name="field7" placeholder="0919 991 199*">
-					<label>Link Mạng xã hội</label>
-					<input type="url" name="field8" placeholder="fb.com/iG">
-					<textarea name="field5" placeholder="Lời nhắn"></textarea>
-				</fieldset>
-					<input type="submit" value="CHIA SẺ CHUYẾN ĐI" />
+				<input type="text" name="flightTo" placeholder="Ho Chi Minh, Ha Noi, Lao cai ex..."></textarea>
+				<label>Ngày đi*</label>
+				<input type="date" name="flightDate" value="CHIA SẺ CHUYẾN ĐI" />
+				<input type="submit" value="CHIA SẺ CHUYẾN ĐI" />
 				</form>
 			</div>
