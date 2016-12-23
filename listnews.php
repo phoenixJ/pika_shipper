@@ -55,50 +55,41 @@ include('header.php');
 				<ul class="list-group ">
 					<?php
 					include('connect.php');
-					if(isset($_SESSION['id_member']))
-					{
-					$un = $_SESSION['id_member'];
-					}
 					$query_data = "SELECT *,id FROM buy order by id desc";
 					$result_data = mysqli_query($conn,$query_data);
 					while($data = mysqli_fetch_array($result_data))
 					{
 						if($data['status'] == NULL || $data['status'] == 0)
 						{
-						echo "
-						<li class='list-group-item col-md-6 col-lg-6 col-sm-12 col-xs-12'>
+							echo "
+							<li class='list-group-item col-md-6 col-lg-6 col-sm-12 col-xs-12'>
 
-						<div class='row product-box'>
-						<div class='col-xs-3 col-sm-3 col-md-3 col-lg-3'>
-						<center>
-						<div class='carousel-inner' style='max-height: 150px;''>
-						<img class='slide-image' src='{$data['link']}'>
-						</div></a>
+							<div class='row product-box'>
+							<div class='col-xs-3 col-sm-3 col-md-3 col-lg-3'>
+							<center>
+							<div class='carousel-inner' style='max-height: 150px;''>
+							<img class='slide-image' src='{$data['link']}'>
+							</div></a>
 
-						</center> 
-						</div>
-						<div class='col-xs-9 col-sm-9 col-md-9 col-lg-9'>
-						<p><small>
+							</center> 
+							</div>
+							<div class='col-xs-9 col-sm-9 col-md-9 col-lg-9'>
+							<p><small>
 
 
-						<span class='label label-success' style='font-size: 12px'>{$data['country']}</span>
+							<span class='label label-success' style='font-size: 12px'>{$data['country']}</span>
 
-						<strong> {$data['item_name']}</strong></small><br/>
-						<small>Ngày đăng: {$data['datec']}</small><br/>
-						<small>Giá: <strong style='color:#a94442'> {$data['cost']} {$data['currency']}</strong></small>   <br/> 
-						<small>Hoa hồng: <strong style='color:#a94442'> {$data['comission']} đ</strong></small>   <br/> 
-						";
-						if(isset($_SESSION['id_member']))
-						{
-						if($un != $data['uid'])
+							<strong> {$data['item_name']}</strong></small><br/>
+							<small>Ngày đăng: {$data['datec']}</small><br/>
+							<small>Giá: <strong style='color:#a94442'> {$data['cost']} {$data['currency']}</strong></small>   <br/> 
+							<small>Hoa hồng: <strong style='color:#a94442'> {$data['comission']} đ</strong></small>   <br/> 
 
-						echo "<a href='getorder.php?id_post={$data['id']}'  class='btn btn-xs btn-link' role='button'><i> <b>Nhận đơn »</b></i></a></small>
-						
-						</div>
-						</div>
+							<a href='getorder.php?id_post={$data['id']}'  class='btn btn-xs btn-link' role='button'><i> <b>Nhận đơn »</b></i></a></small>
+							</div>
+							</div>
 
-						</li>";
-					}}
+							</li>";
+						}
 					}
 					?>
 				</ul>

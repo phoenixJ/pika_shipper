@@ -19,7 +19,7 @@ session_start();
     {   
         $sql = "DELETE FROM buyable WHERE id = $id";
         $conn->query($sql);
-         echo "<div class='alert alert-success'> <span class='glyphicon glyphicon-ok'></span> Đã xóa thành công!</div>  ";
+         echo "<div class='alert alert-success'> <span class='glyphicon glyphicon-ok'></span> Đã xóa thành công bài viết của bạn</div>  ";
 
     }
       else

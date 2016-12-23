@@ -67,7 +67,7 @@ include('header.php');
               <input type="number" name="comission" id="comission" placeholder="...">
               <label for="currency">Đơn vị tiền*</label>
               <select name="currency" id="currency" class="medium gfield_select" tabindex="12">
-                <option value="VND">VND</option>
+                <option value="AUD">VND</option>
                 <option value="JPY">JPY</option>
                 <option value="USD">USD</option>
                 <option value="EUR">EUR</option>

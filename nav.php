@@ -36,7 +36,7 @@
           <a href="listnews.php">Mặt Hàng</a>
         </li>
         <li>
-          <a class="page-scroll" href="index.php#hiw">Cách Hoạt Động</a>
+          <a class="page-scroll" href="index.php#hiw">How To Use</a>
         </li>
         <li>
           <a href="blog.php">Blog</a>
@@ -117,16 +117,16 @@
 
     </form>
   </div>
-                    
-                   </div>
-                 </div>
+  
+</div>
+</div>
 
-               </div>
-             </div>
-             <!-- END LOGIN Form-->
-             <script language="javascript">
-             $('#div-forms').submit(function ()
-             {
+</div>
+</div>
+<!-- END LOGIN Form-->
+<script language="javascript">
+$('#div-forms').submit(function ()
+{
             // Xóa trắng thẻ div show lỗi
             $('#login_error').html('');
 
