@@ -35,8 +35,8 @@ include('nav.php');
                  <br>Chỉ cần 1 phút đăng Yêu Cầu Mua Hộ, 
                  <br>PickShipper sẽ giúp bạn có được món đồ mong muốn trong thời gian ngắn nhất. Hãy đăng yêu cầu mua hộ ngay.</h3>
                  <p style="text-align: center;">
-                  <a class="page-scroll btn btn-xl" href="buyer.php">CẦN MUA</a>
-              </p>
+<!--                   <a class="page-scroll btn btn-xl" href="buyer.php">CẦN MUA</a>
+ -->              </p>
           </div>
       </div>
   </div>
@@ -53,9 +53,9 @@ include('nav.php');
                  <br>nhưng bạn chẳng có gì để mang, thật lãng phí. Thế thì sao không nhận mua hộ một vài món đồ và mang về để có thêm thu nhập.
                  <br>Bạn đang là du học sinh và rất nhớ nhà, muốn đi về Việt Nam mỗi tháng một lần, nhưng vé máy bay thật đắt. 
                  <br>Thế thì sao bạn không nhận mua hộ đồ để kiếm ít tiền, bù lại tiền vé máy bay.Hãy bắt đầu nhận mua hộ ngay từ bây giờ.</h3>
-                 <p style="text-align: center;">
-                  <a class="page-scroll btn btn-xl" href="buyable.php">MUA HỘ</a>
-              </p>
+                 <p style="text-align: center; padding-bottom: 80px;">
+<!--                   <a class="page-scroll btn btn-xl" href="buyable.php">MUA HỘ</a>
+ -->              </p>
           </div>
       </div>
   </div> 
@@ -64,8 +64,8 @@ include('nav.php');
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">CÁCH HOẠT ĐỘNG</h2>
-                <h3 class="section-subheading text-muted">Rất đơn giản!</h3>
+                <h2 class="section-heading">HOW IT WORKS</h2>
+                <h3 class="section-subheading text-muted">Its very simple!</h3>
             </div>
         </div>
         <div class="row">
@@ -73,24 +73,24 @@ include('nav.php');
                 <ul class="timeline">
                     <li>
                         <div class="timeline-image">
-                           <a class="page-scroll" href="buyer.php">
+                           <a class="page-scroll" href="#">
                             <img class="img-circle img-responsive" src="img/icon/want.png" alt="Want to Buy">
                         </a>
                     </div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h3>Cần mua hộ</h3>
+                            <h3>Want to buy</h3>
                             <h5 class="subheading"></h5>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Click the image beside to fill a form and we'll help you 
+                            <p class="text-muted">Login and Click the image beside to fill a form and we'll help you 
                              find the one who can buy this for you!</p>
                          </div>
                      </div>
                  </li>
                  <li class="timeline-inverted">
                     <div class="timeline-image">
-                        <a class="page-scroll" href="buyable.php">
+                        <a class="page-scroll" href="#">
                             <img class="img-circle img-responsive" src="img/icon/buyable.png" alt="buy">
                         </a>
                     </div>
@@ -100,7 +100,7 @@ include('nav.php');
                             <h5 class="subheading">From abroad</h5>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Click to the image beside to fill a form that let us know how to interact with you and get your help! 
+                            <p class="text-muted">Login and Click to the image beside to fill a form that let us know how to interact with you and get your help! 
                              <br>Or you can click here to find another need and make it satisfied</p>
                          </div>
                      </div>

@@ -15,18 +15,12 @@ session_start();
 
       exit();}
 
-    if ($data['uid'] == $id_member||$id_member=='1') //1: id của admin
-    {   
+    
+     
         $id_user = $_SESSION['id_member'];
         $sql = "UPDATE buy SET status=0 where id=$id";
         $conn->query($sql);
-         echo "<div class='alert alert-success'> <span class='glyphicon glyphicon-ok'></span> Đã xóa thành công bài viết của bạn</div>  ";
+         echo "<div class='alert alert-success'> <span class='glyphicon glyphicon-ok'></span> Đã xóa thành công@</div>  ";
 
-    }
-      else
-      {
-
-           echo "<div class='alert alert-danger'> <span class='glyphicon glyphicon-remove'></span> Bạn không có quyền xóa bài viết này</div>  ";
-
-      }
+    
  ?>

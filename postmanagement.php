@@ -17,7 +17,7 @@ include('header.php');
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center" >
-					<h2 class="section-heading">QUẢN LÝ SẢN PHẨMCÓ NGƯỜI CẦN MUA</h2>
+					<h2 class="section-heading">QUẢN LÝ SẢN PHẨM CÓ NGƯỜI CẦN MUA</h2>
 				</div>
 			</div>
 			<div class="form-style-6" >
