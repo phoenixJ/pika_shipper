@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<?php
+include('header.php');
+?>
+<body id="page-top" class="index">
+	<?php
+	include('nav.php');
+	?>
+	
+<div class="container">
+  <h2>Dropdowns</h2>
+  <p>The .dropdown class is used to indicate a dropdown menu.</p>
+  <p>Use the .dropdown-menu class to actually build the dropdown menu.</p>
+  <p>To open the dropdown menu, use a button or a link with a class of .dropdown-toggle and data-toggle="dropdown".</p>                                          
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+    </ul>
+  </div>
+</div>
+
+	<?php
+	include('footer.php');
+	?>
+
+
+</body>
+</html>
